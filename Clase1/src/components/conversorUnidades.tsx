@@ -1,14 +1,20 @@
+/*
+    Componente Conversor de Unidades en React con TypeScript
+    Este componente permite convertir entre metros y pies. 
+*/
 import React, { useState } from "react";
 
 const ConversorUnidades = () => {
+    // Estados para metros y pies
     const [metros, setMetros] = useState("");
     const [pies, setPies] = useState("")
-    const factorDeConversion = 3.28084;
+    const factorDeConversion = 3.28084; // 1 metro = 3.28084 pies
 
     const manejarCambioMetros = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         const n = Number(value);
 
+        // Validar que la entrada sea un número o esté vacía
         if(!isNaN(n) || value === ''){
             setMetros(value)
             const calculoMetrosAPies = n * factorDeConversion;
@@ -17,9 +23,10 @@ const ConversorUnidades = () => {
     }
 
     const manejarCambiosPies = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.value;
+        const value = e.target.value; // Valor ingresado en pies
         const n = Number(value);
 
+        // Validar que la entrada sea un número o esté vacía
         if(!isNaN(n) || value === ""){
             setPies(value)
             const calculoPiesAMetros = n / factorDeConversion;
