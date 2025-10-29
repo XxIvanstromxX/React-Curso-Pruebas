@@ -10,6 +10,7 @@ const InputDinamico = () => {
                 value={texto} 
                 onChange={(e)=>{setTexto(e.target.value)}}
             />
+            {console.log(texto)}
         </>
     )
 }
