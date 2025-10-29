@@ -1,16 +1,29 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const ConversorUnidades = () => {
     const [metros, setMetros] = useState("");
+    const [pies, setPies] = useState("")
     const factorDeConversion = 3.28084;
-    const pies = Number(metros) * factorDeConversion;
 
-    const manejoDeCambio = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const manejarCambioMetros = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value;
         const n = Number(value);
 
         if(!isNaN(n) || value === ''){
             setMetros(value)
+            const calculoMetrosAPies = n * factorDeConversion;
+            setPies(String(calculoMetrosAPies))
+        }
+    }
+
+    const manejarCambiosPies = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const value = e.target.value;
+        const n = Number(value);
+
+        if(!isNaN(n) || value === ""){
+            setPies(value)
+            const calculoPiesAMetros = n / factorDeConversion;
+            setMetros(String(calculoPiesAMetros))
         }
     }
 
@@ -21,16 +34,15 @@ const ConversorUnidades = () => {
             <input 
                 type="text" 
                 value={metros} 
-                placeholder="Type Something..." 
-                onChange={e => manejoDeCambio(e)} 
+                placeholder="Escribe Metros" 
+                onChange={e => manejarCambioMetros(e)} 
             />
-            <h4>
-                Metros: {metros}
-            </h4>
-            <p>Conversión</p>
-            <h4>
-                Pies: {pies !== 0 ? pies.toFixed(3) : 0}
-            </h4>
+            <input 
+                type="text"
+                value={pies}
+                placeholder="Escribe Pies"
+                onChange={e => manejarCambiosPies(e)}
+            />
         </div>
     )
 }
