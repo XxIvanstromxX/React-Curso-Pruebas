@@ -82,7 +82,6 @@ const GaleriaApp = () => {
                                     width="auto" height="150px"
                                 />
                             </a>
-                           
                         </li>
                     ))
                 }
