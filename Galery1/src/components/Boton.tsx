@@ -13,13 +13,3 @@ const Boton = ({palabras}: BotonProps) => {
 }
 
 export default Boton;
-
-
-useEffect(() => {
-  // código del efecto
-    console.log("El componente se ha montado o las dependencias han cambiado");
-  // Limpieza del efecto (opcional)
-    return () => {
-        console.log("El componente se va a desmontar o las dependencias han cambiado");
-    };
-}, [Dependencias]);
