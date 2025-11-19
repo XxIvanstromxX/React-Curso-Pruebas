@@ -1,4 +1,5 @@
 import GaleriaApp from "./components/GaleryApp"
+import "./App.css"
 // import Boton from "./components/Boton"
 
 // const palabras = ["Hola", "Mundo", "Desde", "React", "CCOL"];
@@ -6,7 +7,9 @@ import GaleriaApp from "./components/GaleryApp"
 function App() {
   return (
     <>
-      <h1>Galería de Imágenes</h1>
+      <h1 className="titulo">
+        Galería de Imágenes
+      </h1>
       <GaleriaApp/>
       {/* <Boton palabras={palabras}/> */}
     </>
