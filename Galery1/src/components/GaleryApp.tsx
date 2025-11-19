@@ -52,7 +52,7 @@ const GaleriaApp = () => {
     }
     if(personajeSeleccionado != null){
         return (
-            <div>
+            <div className={styles["personaje"]}>
                 <h2>{personajeSeleccionado.name}</h2>
                 <img
                     src={personajeSeleccionado.image} 
@@ -68,7 +68,7 @@ const GaleriaApp = () => {
     }
 
     return (
-        <div>
+        <div className={styles["galery"]}>
             <h2>Cargando imagenes {fotos.length}</h2>
             <ul className={styles["galery-ul"]}>
                 {
