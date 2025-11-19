@@ -76,7 +76,7 @@ const GaleriaApp = () => {
                         <li key={foto.id}>
                             <h4>{foto.name}</h4>
                             <a onClick={() => seleccionarPersonaje(foto)} href='#'>
-                                <img 
+                                <img
                                     src={foto.image} 
                                     alt={foto.name} 
                                     width="auto" height="150px"
