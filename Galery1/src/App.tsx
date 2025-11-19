@@ -1,7 +1,7 @@
 import GaleriaApp from "./components/GaleryApp"
 // import Boton from "./components/Boton"
 
-const palabras = ["Hola", "Mundo", "Desde", "React", "CCOL"];
+// const palabras = ["Hola", "Mundo", "Desde", "React", "CCOL"];
 
 function App() {
   return (
