@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import styles from"./Galery.module.css"
+import styles from"./Galery.module.css";
 
 interface Image {
     id: number,
