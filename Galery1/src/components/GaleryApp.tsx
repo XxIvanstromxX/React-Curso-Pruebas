@@ -16,7 +16,7 @@ const GaleriaApp = () => {
         const fetchData = async () => {
             try{
                 // Realizar la solicitud a la API de prueba
-                const response = await fetch("https://dragonball-api.com/api/characters?limit=10")
+                const response = await fetch("https://dragonball-api.com/api/characters?limit=10");
                 const data = await response.json();
                 const imagen = data.items.map((d: Image) => {
                     const img = {
@@ -25,16 +25,16 @@ const GaleriaApp = () => {
                         image: d.image
                     }
                     return img
-                })
+                });
                 console.log(imagen)
 
                 // Actualizar el estado con los nombres de los usuarios y cambiar el estado de cargando
                 setFotos(imagen)
-                setCargando(false) // Datos cargados
+                setCargando(false); // Datos cargados
             }
             catch(e){
                 console.error(e);
-                setCargando(false)
+                setCargando(false);
             }
         }  
         fetchData();
@@ -45,10 +45,10 @@ const GaleriaApp = () => {
     }
 
     if(cargando){
-        return <p>Cargando...</p>
+        return <p>Cargando...</p>;
     }
     if(fotos.length === 0){
-        return <p>Datos no encontrados...</p>
+        return <p>Datos no encontrados...</p>;
     }
     if(personajeSeleccionado != null){
         return (
@@ -60,7 +60,7 @@ const GaleriaApp = () => {
                     width="auto" height="300px"
                 />
                 <br/>
-                <button onClick={() => setPersonajeSeleccionado(null)}>
+                <button onClick={() => setPersonajeSeleccionado(null)} type="button">
                     Volver a la galería
                 </button>
             </div>
@@ -75,10 +75,10 @@ const GaleriaApp = () => {
                     fotos.map((foto)=>(
                         <li key={foto.id}>
                             <h4>{foto.name}</h4>
-                            <a onClick={() => seleccionarPersonaje(foto)} href='#'>
+                            <a onClick={() => seleccionarPersonaje(foto)} href='#' type="button">
                                 <img
-                                    src={foto.image} 
-                                    alt={foto.name} 
+                                    src={foto.image}
+                                    alt={foto.name}
                                     width="auto" height="150px"
                                 />
                             </a>
