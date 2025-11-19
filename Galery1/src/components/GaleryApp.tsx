@@ -54,7 +54,7 @@ const GaleriaApp = () => {
         return (
             <div>
                 <h2>{personajeSeleccionado.name}</h2>
-                <img 
+                <img
                     src={personajeSeleccionado.image} 
                     alt={personajeSeleccionado.name} 
                     width="auto" height="300px"
