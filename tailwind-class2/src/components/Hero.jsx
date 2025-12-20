@@ -1,7 +1,7 @@
 export function Hero() {
     return (
-        <section className="flex flex-col md:flex-row items-center justify-center px-6 py-16 gap-10">
-            <div className="max-w-xl">
+        <section className="flex flex-col items-center justify-center px-6 py-16 gap-10 h-screen md:h-150">
+            <div className="">
                 <h2 className="text-4xl font-bold mb-4">
                 Diseña interfaces modernas
                 </h2>
@@ -13,7 +13,7 @@ export function Hero() {
                 </button>
             </div>
 
-            <div className="w-full md:w-1/2 h-64 bg-gray-200 rounded">
+            <div className="w-[90%] md:w-1/2 h-64 bg-gray-200 rounded-xl">
                 Mockup
             </div>
         </section>
