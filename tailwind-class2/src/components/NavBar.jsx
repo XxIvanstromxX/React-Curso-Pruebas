@@ -27,7 +27,7 @@ export function NavBar() {
                 <button className="bg-blue-500 hover:bg-blue-700 transition-all duration-200 text-white h-8 px-3 rounded-lg text-sm">
                     Get Started
                 </button>
-                <DarkModeToggle />
+                <DarkModeToggle/>
             </div>
 
             <div className="lg:hidden">
