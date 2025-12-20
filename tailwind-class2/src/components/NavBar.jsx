@@ -1,4 +1,5 @@
 import { useState } from "react"
+import DarkModeToggle from "./ThemeToggle";
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ export function NavBar() {
                 <button className="bg-blue-500 hover:bg-blue-700 transition-all duration-200 text-white h-8 px-3 rounded-lg text-sm">
                     Get Started
                 </button>
+                <DarkModeToggle />
             </div>
 
             <div className="lg:hidden">
