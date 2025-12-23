@@ -1,6 +1,6 @@
 import Hero from "../components/Hero"
 import Testimonials from "../components/Testimonials"
-import ServiceCards from "../components/ServiceCard"
+import ServiceCard from "../components/ServiceCard"
 
 export default function LandingPage() {
     return (

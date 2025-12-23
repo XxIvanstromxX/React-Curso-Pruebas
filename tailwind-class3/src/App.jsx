@@ -1,4 +1,4 @@
-import { NavBar } from "./components/NavBar"
+import NavBar from "./components/NavBar"
 import LandingPage from "./pages/LandingPage"
 import Footer from "./components/Footer"
 

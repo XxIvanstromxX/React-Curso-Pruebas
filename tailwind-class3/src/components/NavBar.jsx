@@ -1,7 +1,7 @@
 import { useState } from "react"
 import DarkModeToggle from "./ThemeToggle";
 
-export function NavBar() {
+export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
