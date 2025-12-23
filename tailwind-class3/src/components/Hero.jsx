@@ -1,7 +1,7 @@
 export function Hero() {
     return (
-        <section className="flex flex-col items-center justify-center px-6 py-16 gap-10 h-screen md:h-150">
-            <div className="flex flex-col items-center justify-center">
+        <section className="max-w-full mx-auto px-6 py-12 md:py-16 gap-10 h-screen md:h-150">
+            <div className="flex flex-col items-center justify-center py-16">
                 <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">
                 Diseña interfaces modernas
                 </h2>
@@ -20,7 +20,7 @@ export function Hero() {
                         <button></button>
                     </div>
                     <div className="bg-amber-600 hover:bg-amber-700 dark:bg-gray-600 rounded-[30px] p-4 min-h-52 flex flex-col items-center justify-center flex-1">
-                        <h1 className="text-white">Web DashBoards</h1>
+                        <h1 className="text-white">Web Dash Boards</h1>
                         <button></button>
                     </div>
                     <div className="bg-amber-600 hover:bg-amber-700 dark:bg-gray-600 rounded-[30px] p-4 min-h-52 flex flex-col items-center justify-center flex-1">
