@@ -1,6 +1,6 @@
-export function Hero() {
+export default function Hero() {
     return (
-        <section className="max-w-full mx-auto px-6 py-12 md:py-16 gap-10 h-screen md:h-150">
+        <section className="max-w-full mx-auto px-6 py-16 md:py-12 gap-10 h-3/4 md:h-150">
             <div className="flex flex-col items-center justify-center py-16">
                 <h2 className="text-4xl font-bold mb-4 text-gray-800 dark:text-white">
                 Diseña interfaces modernas
