@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white py-12 px-6 border-t border-gray-200 dark:border-white/10 transition-colors duration-300">
+        <footer className="bg-linear-to-b from-transparent to-white dark:bg-linear-to-b dark:from-transparent dark:to-gray-800 text-gray-800 dark:text-white py-12 px-6 transition-colors duration-300">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div className="col-span-1 md:col-span-2">
                     <h3 className="text-2xl font-bold mb-4 bg-linear-to-r from-amber-500 to-amber-700 bg-clip-text text-transparent w-fit">

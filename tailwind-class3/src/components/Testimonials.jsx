@@ -33,7 +33,7 @@ export default function Testimonials() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-gray-50 dark:bg-white/5 p-8 rounded-3xl border border-gray-100 dark:border-white/10 relative">
+                    <div key={index} className="bg-white/40 dark:bg-white/5 p-8 rounded-3xl border border-gray-100 dark:border-white/10 relative shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300">
                         <div className="flex items-center gap-4 mb-6">
                             <img 
                                 src={testimonial.avatar} 

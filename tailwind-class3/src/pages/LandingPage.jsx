@@ -3,6 +3,21 @@ import Testimonials from "../components/Testimonials"
 import ServiceCard from "../components/ServiceCard"
 
 export default function LandingPage() {
+    const services = [
+        {
+            title: "Diseño Web",
+            description: "Creamos sitios web atractivos y funcionales que capturan la esencia de tu marca."
+        },
+        {
+            title: "Desarrollo Frontend",
+            description: "Desarrollamos interfaces de usuario interactivas y responsivas utilizando las últimas tecnologías."
+        },
+        {
+            title: "Optimización SEO",
+            description: "Mejoramos la visibilidad de tu sitio web en los motores de búsqueda para atraer más tráfico."
+        }
+    ];
+
     return (
         <>
             <Hero/>
@@ -12,18 +27,13 @@ export default function LandingPage() {
                         Nuestros Servicios
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <ServiceCards 
-                            title="Diseño Web"
-                            description="Creamos sitios web atractivos y funcionales que capturan la esencia de tu marca."
-                        />
-                        <ServiceCards 
-                            title="Desarrollo Frontend"
-                            description="Desarrollamos interfaces de usuario interactivas y responsivas utilizando las últimas tecnologías."
-                        />
-                        <ServiceCards 
-                            title="Optimización SEO"
-                            description="Mejoramos la visibilidad de tu sitio web en los motores de búsqueda para atraer más tráfico."
-                        />
+                        {services.map((service, index) => (
+                            <ServiceCard 
+                                key={index}
+                                title={service.title}
+                                description={service.description}
+                            />
+                        ))}
                     </div>
                 </section>
             </div>
