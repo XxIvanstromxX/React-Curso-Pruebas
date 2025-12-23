@@ -35,7 +35,7 @@ export function NavBar() {
                     <img src="/hamburger.svg" alt="menu" className="h-6 w-6 dark:invert"/>
                 </button>
                 {isOpen && (
-                    <div className="absolute left-1/2 -translate-x-1/2 bottom-4 bg-white dark:bg-gray-900 shadow-lg rounded-xl w-[95%] py-4 flex flex-col gap-4 z-50 border border-gray-300 dark:border-gray-600 backdrop-blur-md">
+                    <div className="absolute left-1/2 -translate-x-1/2 bottom-2 bg-white dark:bg-gray-900 shadow-lg rounded-xl w-[95%] py-4 flex flex-col gap-4 z-50 border border-gray-300 dark:border-gray-600 backdrop-blur-md">
                         <a href="#" className="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700">Home</a>
                         <a href="#" className="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700">About</a>
                         <a href="#" className="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700">Services</a>
@@ -47,6 +47,7 @@ export function NavBar() {
                             <button className="w-full bg-blue-500 hover:bg-blue-700 transition-all duration-200 text-white h-8 rounded-lg text-sm">
                                 Get Started
                             </button>
+                            <DarkModeToggle/>
                         </div>
                     </div>
                 )}
