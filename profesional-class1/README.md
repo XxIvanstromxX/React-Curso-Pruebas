@@ -16,4 +16,3 @@ En esta primera clase nos enfocaremos en:
 - **Carpetas principales**: Definición y configuración de directorios clave
 - **Configuración base**: Setup inicial del proyecto con las herramientas necesarias
 - **Dependencias**: Instalación de librerías esenciales para el desarrollo
-- **Componentes iniciales**: Creación de los primeros componentes React
