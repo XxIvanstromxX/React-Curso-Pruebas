@@ -1,7 +1,12 @@
+import MainLayout from './components/layout/MainLayout';
+
 function App() {
   return (
     <>
-      <h1>hola mundo</h1>
+      <MainLayout>
+        <h1>Bienvenidos a mi aplicación</h1>
+        <p>Esta es una aplicación de ejemplo utilizando React.</p>
+      </MainLayout>
     </>
   );
 }
